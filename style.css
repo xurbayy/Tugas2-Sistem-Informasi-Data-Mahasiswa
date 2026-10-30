@@ -1,0 +1,233 @@
+/* style.css - tampilan seluruh aplikasi */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    color: #222;
+    font-size: 15px;
+}
+
+/* ---------- Navigasi ---------- */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: #1f3a5f;
+    color: #fff;
+    padding: 12px 24px;
+}
+
+.navbar .brand {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.pilih-bahasa a {
+    opacity: 0.7;
+}
+
+.pilih-bahasa a.aktif {
+    font-weight: bold;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+main {
+    padding: 10px 16px 40px;
+}
+
+.footer {
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    padding: 16px;
+}
+
+/* ---------- Kartu / wadah ---------- */
+.wadah {
+    max-width: 750px;
+    margin: 30px auto;
+    background-color: #fff;
+    border: 1px solid #999;
+    padding: 20px 30px;
+}
+
+.wadah.lebar {
+    max-width: 1100px;
+}
+
+.wadah.kecil {
+    max-width: 420px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* ---------- Pesan ---------- */
+.pesan {
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+}
+
+.pesan.sukses {
+    background-color: #ccffcc;
+    border-color: #009900;
+    color: #006600;
+}
+
+.pesan.gagal {
+    background-color: #ffcccc;
+    border-color: #cc0000;
+    color: #990000;
+}
+
+.pesan.info {
+    background-color: #e3ecf9;
+    border-color: #1f3a5f;
+    color: #1f3a5f;
+}
+
+.err {
+    display: block;
+    color: #c00000;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+/* ---------- Formulir ---------- */
+.form-mahasiswa .baris {
+    display: flex;
+    gap: 16px;
+    padding: 8px 0;
+    align-items: flex-start;
+}
+
+.form-mahasiswa label,
+.form-mahasiswa .label {
+    width: 35%;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.form-mahasiswa .baris > div {
+    flex: 1;
+}
+
+.form-mahasiswa input[type="text"],
+.form-mahasiswa input[type="password"],
+.form-mahasiswa select,
+.form-mahasiswa textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #bbb;
+    font-size: 14px;
+}
+
+.form-mahasiswa label.pilihan {
+    display: inline-block;
+    width: auto;
+    font-weight: normal;
+    margin-right: 14px;
+    padding-top: 0;
+}
+
+.tombol-aksi {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 16px;
+}
+
+/* ---------- Tombol ---------- */
+.tombol {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #1f3a5f;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 4px;
+}
+
+.tombol:hover {
+    opacity: 0.9;
+}
+
+.tombol.abu {
+    background-color: #888;
+}
+
+.tombol.merah {
+    background-color: #b3261e;
+}
+
+.tombol.kecil {
+    padding: 4px 10px;
+    font-size: 13px;
+    margin: 0 2px;
+}
+
+/* ---------- Tabel data ---------- */
+.tabel-responsif {
+    overflow-x: auto;
+}
+
+.tabel-data {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.tabel-data th,
+.tabel-data td {
+    border: 1px solid #999;
+    padding: 6px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.tabel-data th {
+    background-color: #e0e0e0;
+}
+
+.tabel-data .tengah {
+    text-align: center;
+}
+
+.tabel-data td.aksi {
+    white-space: nowrap;
+}
+
+.tabel-data td.aksi form {
+    display: inline;
+}
